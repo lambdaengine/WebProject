@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+	<title>SounD</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="homework.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  	<script src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+	<div class="top">
+		<div class="home">
+			<a id="home"><img src="home.png"></a>
+		</div>
+		<div class="addnote">
+			<a id="addnote"><span class="glyphicon glyphicon-plus"></span></a>
+		</div>
+		<div class="searchbox"><input type="text" class="form-control" placeholder="#Hashtag"></div>
+	</div>
+	<div class="middle">
+		<div class="title">
+			<input type="text" class="form-control" placeholder="Title">
+		</div>
+		<div class="hashtag">
+			<input type="text" class="form-control" placeholder="#Hashtag">
+		</div>
+		<div class="edit">
+			<form>
+            	<textarea name="editor1" id="editor1" rows="10" cols="80">
+
+            	</textarea>
+
+        	</form>
+		</div>
+		<div class="timeline"></div>
+	</div>
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="homework.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDHyiWCuW__nJ4s_0jyT6ZbQgZzOu7uWpg",
+    authDomain: "webhomework-24745.firebaseapp.com",
+    databaseURL: "https://webhomework-24745.firebaseio.com",
+    projectId: "webhomework-24745",
+    storageBucket: "webhomework-24745.appspot.com",
+    messagingSenderId: "133165039945"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+</script>
+</body>
+</html>

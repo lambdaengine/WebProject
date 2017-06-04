@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.top{
+	background-color: white;
+	border:1px solid black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 65px;
+	z-index: 10001;
+}
+.home a{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+}
+.home img{
+	width: 35px;
+	height: 35px;
+}
+.addnote a{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+}
+.addnote span{
+	width: 50px;
+	height: 50px;
+}
+.glyphicon{
+	font-size: 50px;
+	color: black;
+}
+.form-inline{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+}
+.searchbox{
+	position: fixed;
+	top: 65px;
+	left: 0px;
+	right: 0px;
+	width: 350px;
+	height: 40px;
+	display: none;
+}
+.middle{
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+.title{
+	padding: 10px;
+	width: 80%;
+	float: left;
+}
+.hashtag{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	width: 80%;
+	float: left;
+}
+.edit{
+	border:1px solid black;
+	width: 100%;
+	height: 400px;
+	display: inline-block;
+	clear: both;
+	float: left;
+}
+}
+.page{
+	border:1px solid black;
+	width: 100%;
+	display: inline-block;
+	clear: both;
+	float: left;
+}
+.page : after{
+	content: " ";
+	display: block;
+	clear: both;
+}
